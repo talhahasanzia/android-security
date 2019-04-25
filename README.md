@@ -12,3 +12,4 @@ Following are the key areas where security needs a little bit extra effort while
 - **Activity Manager:** Any activity from your app can be launched using adb commands directly. How you can secure them?
 - **Securing API Keys:** Some keys needs to be shipped with the app and are often placed in constants, these can be accessed just by decompilation.
 - **Proguard/DexGaurd:** Securing your app source from decompilation using tools like Progaurd and DexGaurd.
+- **Local Broadcast:** Broadcasts within the app should be using LocalBroadcastManager (see Official Docs). Notification clicks are from outside so it should remain uneffected
